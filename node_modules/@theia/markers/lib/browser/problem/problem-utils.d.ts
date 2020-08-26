@@ -1,0 +1,42 @@
+/********************************************************************************
+ * Copyright (C) 2020 Ericsson and others.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * This Source Code may also be made available under the following Secondary
+ * Licenses when the conditions for such availability set forth in the Eclipse
+ * Public License v. 2.0 are satisfied: GNU General Public License, version 2
+ * with the GNU Classpath Exception which is available at
+ * https://www.gnu.org/software/classpath/license.html.
+ *
+ * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+ ********************************************************************************/
+import { Marker } from '../../common/marker';
+import { Diagnostic } from '@theia/languages/lib/browser';
+export declare namespace ProblemUtils {
+    /**
+     * Comparator for severity.
+     * - The highest severity (`error`) come first followed by others.
+     * - `undefined` severities are treated as the last ones.
+     * @param a the first marker for comparison.
+     * @param b the second marker for comparison.
+     */
+    const severityCompare: (a: Marker<Diagnostic>, b: Marker<Diagnostic>) => number;
+    /**
+     * Comparator for line numbers.
+     * - The lowest line number comes first.
+     * @param a the first marker for comparison.
+     * @param b the second marker for comparison.
+     */
+    const lineNumberCompare: (a: Marker<Diagnostic>, b: Marker<Diagnostic>) => number;
+    /**
+     * Comparator for column numbers.
+     * - The lowest column number comes first.
+     * @param a the first marker for comparison.
+     * @param b the second marker for comparison.
+     */
+    const columnNumberCompare: (a: Marker<Diagnostic>, b: Marker<Diagnostic>) => number;
+}
+//# sourceMappingURL=problem-utils.d.ts.map
