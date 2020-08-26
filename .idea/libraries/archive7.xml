@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="archive7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/node_modules/unzip-stream/testData/invalid/archive.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
